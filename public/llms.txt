@@ -1,0 +1,36 @@
+# Junaid Gandhi - Portfolio
+
+I am Junaid Gandhi. I master the entire stack to build scalable web platforms and native mobile ecosystems end-to-end.
+
+## About
+Android & Full-Stack Engineer. I don't just write code; I orchestrate systems. Building independently requires rigorous architectural planning across the entire stack. From configuring the underlying database schemas, to deploying scalable Node.js microservices, out to publishing polished native Android endpoints.
+
+## Social Links
+- GitHub: https://github.com/iMJ007
+- LinkedIn: https://www.linkedin.com/in/mohammed-junaid-gandhi-31555313b/
+- Play Store: https://play.google.com/store/apps/dev?id=6428398715878309895&hl=en_IN
+- X (Twitter): https://x.com/MohammedJunaidG
+
+## Technology Stack
+- **Frontend Frameworks:** Next.js, React, Tailwind CSS, TypeScript, Motion
+- **Backend & APIs:** Node.js, Bun.js, Express, Hono, REST APIs
+- **Database & Services:** MongoDB, Firebase Auth, Firestore, Redis
+- **Mobile Development:** Native Android, Kotlin, Java, Jetpack Compose
+- **Architecture:** API Rate Limiting, Microservice Patterns, Authentication Flows, Data Modeling
+
+## Systems & Projects
+- **Unified E-commerce Ecosystem:** A full-scale operation replacing fragmented Shopify instances with a unified, custom architecture.
+  - Web Platform: Next.js frontend
+  - Core API Backend: Node.js/Express coordinating logic & inventory
+  - Android POS: App for retail checkout
+  - Admin App: Kotlin/Compose for inventory management
+
+- **Social Wellness Platform:** A community-driven app combining habit tracking with social accountability.
+  - Social Graph Server: Bun & Hono optimizing high-frequency relationship queries
+  - Consumer Native App: Advanced Android Compose UI
+  - Real-time Microservices: WebSocket nodes for live updates
+
+## Mobile Apps Available on Play Store
+- Crisper - HD & 4K Wallpapers
+- Orphic - Words & Meanings
+- EveQuote - Best Inspiring Quotes
