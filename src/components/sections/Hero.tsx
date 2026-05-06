@@ -29,7 +29,7 @@ export function Hero() {
     >
       {/* Background Glows Follow Mouse */}
       <motion.div
-        style={{ left: mouseX, top: mouseY }}
+        style={{ x: mouseX, y: mouseY, left: 0, top: 0 }}
         animate={{
           rotate: [0, 360],
           scale: [1, 1.1, 0.9, 1],
@@ -40,10 +40,10 @@ export function Hero() {
           ],
         }}
         transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-        className="absolute w-[600px] h-[600px] bg-indigo-600/20 blur-[120px] pointer-events-none -translate-x-1/2 -translate-y-1/2"
+        className="absolute w-[600px] h-[600px] bg-indigo-600/20 blur-[120px] pointer-events-none -ml-[300px] -mt-[300px]"
       />
       <motion.div
-        style={{ left: mouseX, top: mouseY }}
+        style={{ x: mouseX, y: mouseY, left: 0, top: 0 }}
         animate={{
           rotate: [360, 0],
           scale: [0.9, 1.1, 1, 0.9],
@@ -54,7 +54,7 @@ export function Hero() {
           ],
         }}
         transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
-        className="absolute w-[500px] h-[500px] bg-sky-500/10 blur-[100px] pointer-events-none -translate-x-[40%] -translate-y-[60%]"
+        className="absolute w-[500px] h-[500px] bg-sky-500/10 blur-[100px] pointer-events-none -ml-[200px] -mt-[300px]"
       />
 
       <div className="max-w-7xl mx-auto px-6 w-full relative z-10 flex flex-col items-start">
