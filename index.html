@@ -76,14 +76,20 @@
     <link rel="llms" href="/llms.txt" />
     <link rel="canonical" href="https://junaidgandhi.com/" />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XLTWEH6QVX"></script>
+    <!-- Google tag (gtag.js) deferred -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      window.addEventListener('load', function() {
+        var script = document.createElement('script');
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-XLTWEH6QVX";
+        script.async = true;
+        document.head.appendChild(script);
 
-      gtag('config', 'G-XLTWEH6QVX');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-XLTWEH6QVX');
+      });
     </script>
   </head>
   <body>

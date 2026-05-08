@@ -30,30 +30,10 @@ export function Hero() {
       {/* Background Glows Follow Mouse */}
       <motion.div
         style={{ x: mouseX, y: mouseY, left: 0, top: 0 }}
-        animate={{
-          rotate: [0, 360],
-          scale: [1, 1.1, 0.9, 1],
-          borderRadius: [
-            "40% 60% 70% 30% / 40% 50% 60% 50%",
-            "60% 40% 30% 70% / 50% 60% 40% 50%",
-            "40% 60% 70% 30% / 40% 50% 60% 50%",
-          ],
-        }}
-        transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
         className="absolute w-[600px] h-[600px] bg-indigo-600/20 blur-[120px] pointer-events-none -ml-[300px] -mt-[300px]"
       />
       <motion.div
         style={{ x: mouseX, y: mouseY, left: 0, top: 0 }}
-        animate={{
-          rotate: [360, 0],
-          scale: [0.9, 1.1, 1, 0.9],
-          borderRadius: [
-            "60% 40% 30% 70% / 50% 60% 40% 50%",
-            "40% 60% 70% 30% / 40% 50% 60% 50%",
-            "60% 40% 30% 70% / 50% 60% 40% 50%",
-          ],
-        }}
-        transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
         className="absolute w-[500px] h-[500px] bg-sky-500/10 blur-[100px] pointer-events-none -ml-[200px] -mt-[300px]"
       />
 
