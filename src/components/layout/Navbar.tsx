@@ -1,12 +1,15 @@
+"use client";
+
 import { motion } from "motion/react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "../ThemeProvider";
-import { Link, useLocation } from "react-router-dom";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export function Navbar() {
   const { theme, toggleTheme } = useTheme();
-  const location = useLocation();
-  const isHome = location.pathname === "/";
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   return (
     <motion.header
@@ -17,19 +20,31 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link
-          to="/"
+          href="/"
           className="font-mono text-xl font-bold tracking-tighter text-gray-900 dark:text-white px-3 py-1.5 rounded-full bg-white/50 dark:bg-black/20 backdrop-blur-md border border-gray-200 dark:border-white/10 shadow-sm dark:shadow-none flex items-center justify-center"
         >
           JG<span className="text-indigo-500">.</span>
         </Link>
 
         {isHome && (
-          <nav className="hidden md:flex items-center gap-8 px-6 py-2 border border-gray-200 dark:border-white/10 rounded-full bg-white/50 dark:bg-black/20 backdrop-blur-md shadow-sm dark:shadow-none">
+          <nav className="hidden md:flex items-center gap-6 lg:gap-8 px-6 py-2 border border-gray-200 dark:border-white/10 rounded-full bg-white/50 dark:bg-black/20 backdrop-blur-md shadow-sm dark:shadow-none">
             <a
               href="#systems"
               className="text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-white/70 dark:hover:text-white transition-colors"
             >
               Systems
+            </a>
+            <a
+              href="#mobile-apps"
+              className="text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-white/70 dark:hover:text-white transition-colors"
+            >
+              Mobile
+            </a>
+            <a
+              href="#web-apps"
+              className="text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-white/70 dark:hover:text-white transition-colors"
+            >
+              Web
             </a>
             <a
               href="#about"
@@ -71,7 +86,7 @@ export function Navbar() {
             </button>
           ) : (
             <Link
-              to="/"
+              href="/"
               className="h-9 px-4 bg-gray-900 hover:bg-gray-800 dark:bg-white/10 dark:hover:bg-white/20 border border-transparent dark:border-white/10 rounded-full text-sm font-medium text-white backdrop-blur-md transition-colors hidden sm:flex items-center"
             >
               Back to Portfolio

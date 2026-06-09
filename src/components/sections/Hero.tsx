@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion, useMotionValue, useSpring } from "motion/react";
 import { ArrowRight, Code2, Layers, Smartphone, Download } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from 'next/link';
 
 export function Hero() {
   const x = useMotionValue(0);
@@ -106,7 +106,7 @@ export function Hero() {
             Contact Me
           </button>
           <Link
-            to="/resume"
+            href="/resume"
             className="h-12 px-8 border border-gray-300 dark:border-white/20 text-gray-800 dark:text-white rounded-full hover:bg-gray-100 dark:hover:bg-white/5 hover:border-gray-400 dark:hover:border-white/40 transition-colors flex items-center gap-2 group"
           >
             <Download className="w-4 h-4" />

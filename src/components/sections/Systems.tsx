@@ -174,7 +174,7 @@ function SystemCard({
         {/* Visual / Diagram Column */}
         <div className="order-1 md:order-2 h-[400px] md:h-[500px] rounded-3xl bg-gray-50 dark:bg-white/[0.02] border border-gray-200 dark:border-white/5 p-8 relative overflow-hidden flex items-center justify-center">
           {/* Subtle grid background inside the card */}
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDMpIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPjxwb2x5bGluZSBwb2ludHM9IjQwLDAgNDAsNDAgMCw0MCIvPjwvZz48L3N2Zz4=')] opacity-50" />
+          <div className="absolute inset-0 bg-grid-white opacity-50" />
 
           <div className="relative z-10 w-full h-full flex items-center justify-center">
             {/* Mockup of architecture overlapping cards */}

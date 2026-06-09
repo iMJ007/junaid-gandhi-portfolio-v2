@@ -28,14 +28,14 @@ export function Contact() {
 
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <a
-            href="mailto:contact@junaidgandhi.com"
+            href="mailto:mohammed.junaid1000@gmail.com"
             className="h-14 px-8 bg-gray-900 text-white dark:bg-white dark:text-black font-semibold rounded-full hover:bg-gray-800 dark:hover:bg-white/90 hover:scale-105 transition-all text-lg flex items-center justify-center gap-2 group w-full sm:w-auto shadow-md dark:shadow-none"
           >
             <Mail className="w-5 h-5" />
             Email Me
           </a>
           <a
-            href="https://wa.me/919987379763"
+            href="https://wa.me/"
             target="_blank"
             rel="noopener noreferrer"
             className="h-14 px-8 bg-[#25D366]/10 text-[#25D366] border border-[#25D366]/30 font-semibold rounded-full hover:bg-[#25D366]/20 hover:scale-105 transition-all text-lg flex items-center justify-center gap-2 group w-full sm:w-auto"
