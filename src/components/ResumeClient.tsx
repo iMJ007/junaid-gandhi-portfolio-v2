@@ -1,6 +1,8 @@
+"use client";
+
 import { Printer, MapPin, Globe, Github, Linkedin, Smartphone, AlertCircle, X, ArrowLeft } from 'lucide-react';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const Section = ({ title, className = "", children }: { title: string; className?: string; children: React.ReactNode }) => (
   <section className={`mb-10 ${className}`}>
@@ -38,7 +40,7 @@ const ExperienceItem = ({
   </div>
 );
 
-export function ResumePage() {
+export function ResumeClient() {
   const [showToast, setShowToast] = useState(false);
 
   const handlePrint = () => {
@@ -89,7 +91,7 @@ export function ResumePage() {
       {/* Back Button */}
       <div className="fixed top-6 left-4 sm:top-8 sm:left-8 no-print z-50">
         <Link
-          to="/"
+          href="/"
           className="flex items-center gap-2 bg-white/70 dark:bg-black/70 hover:bg-white/90 dark:hover:bg-black/90 backdrop-blur-md text-zinc-800 dark:text-zinc-200 px-4 py-2.5 rounded-full font-medium shadow-[0_4px_24px_rgba(0,0,0,0.06)] hover:shadow-[0_6px_32px_rgba(0,0,0,0.1)] transition-all active:scale-95 border border-white/40 dark:border-white/10"
         >
           <ArrowLeft className="w-4 h-4 text-zinc-500 dark:text-zinc-400" />

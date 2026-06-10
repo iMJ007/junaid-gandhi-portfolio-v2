@@ -35,7 +35,7 @@ export function Contact() {
             Email Me
           </a>
           <a
-            href="https://wa.me/91998737973"
+            href="https://wa.me/"
             target="_blank"
             rel="noopener noreferrer"
             className="h-14 px-8 bg-[#25D366]/10 text-[#25D366] border border-[#25D366]/30 font-semibold rounded-full hover:bg-[#25D366]/20 hover:scale-105 transition-all text-lg flex items-center justify-center gap-2 group w-full sm:w-auto"
